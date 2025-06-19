@@ -2,441 +2,138 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROWAN HONGO RESUME</title>
+    <title>Rowan Hongo Resume</title>
     <style>
-        /* Basic styles */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: white;
-            color: #333;
+            font-family: sans-serif;
+            background: #fcf7f2;
+            color: #2e1a13;
         }
-        
-        /* Navigation */
-        #navbar {
-            background-color: #1e3c96;
-            padding: 15px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
+
+//might add more later
+
+        /* Content area */
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
         }
-        
-        #navbar a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-            padding: 5px 10px;
+
+        h1 {
+            color: #5c2e7e;
         }
-        
-        #navbar a:hover {
-            background-color: #2850d1;
-        }
-        
-        /* Header */
-        #header {
-            background: linear-gradient(to right, #1e3c96, #4a90e2);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-            margin-top: 60px;
-        }
-        
-        /* Sections */
-        .section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .blue-bg {
-            background-color: #f8f9ff;
-        }
-        
+
         h2 {
-            color: #1e3c96;
-            font-size: 28px;
-            margin-bottom: 20px;
+            color: #7b3f00; /* brown */
+            border-bottom: 1px solid #d4c2b8;
+            padding-bottom: 5px;
         }
-        
-        /* Contact and other boxes */
-        .info-box {
-            background-color: #f8f9ff;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #1e3c96;
-            border-radius: 5px;
+
+        .section {
+            margin-bottom: 30px;
         }
-        
-        /* Skills grid */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+
+        .box {
+            background-color: #f5edfc; /* soft purple tint */
+            border-left: 5px solid #7b3f00; /* brown accent */
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
         }
-        
-        .skill-box {
-            background-color: white;
-            border: 2px solid #1e3c96;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            border-radius: 5px;
-        }
-        
-        /* Form styles */
-        .contact-form {
-            background-color: #f8f9ff;
-            padding: 25px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 2px solid #ddd;
-            border-radius: 3px;
-        }
-        
-        .contact-form button {
-            background-color: #1e3c96;
+
+        footer {
+            background-color: #5c2e7e;
             color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        /* Project slider */
-        .project-slider {
-            background-color: white;
-            border: 2px solid #1e3c96;
-            padding: 30px;
             text-align: center;
-            border-radius: 10px;
-            margin: 20px 0;
+            padding: 20px;
+            margin-left: 200px;
         }
-        
-        /* Mobile menu button */
-        .menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            float: right;
-            cursor: pointer;
+
+        footer a {
+            color: #f4dcb0;
+            margin: 0 10px;
+            text-decoration: none;
         }
-        
-        /* Mobile styles */
-        @media (max-width: 768px) {
-            .menu-btn { display: block; }
-            .skills-container { flex-direction: column; align-items: center; }
-            .skill-box { width: 80%; }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Simple Navigation -->
-    <div id="navbar">
-        <a href="#header">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    </div>
 
-    <!-- Header Section -->
-    <header id="header" style="background: linear-gradient(to right, #1e3c96, #4a90e2); color: white; text-align: center; padding: 120px 20px 80px 20px;">
-        <h1 style="font-size: 48px; margin-bottom: 20px;"><b>ROWAN</b> HONGO</h1>
-        <hr style="width: 150px; margin: 20px auto; border: 2px solid white;">
-        <p style="font-size: 20px; letter-spacing: 2px;">CURRICULUM VITAE</p>
-        <hr style="width: 150px; margin: 20px auto; border: 2px solid white;">
-        <p style="font-size: 18px; margin-top: 20px;">Software Engineering Student | Agriculture Expert | Multi-lingual</p>
-    </header>
+   
+    <div class="main-content">
+        <h1>Rowan Hongo</
+        h1>
 
-    <!-- About Section -->
-    <div id="about" class="section blue-bg" style="background-color: #f8f9ff; padding: 50px 20px;">
-        <h2 style="color: #1e3c96; text-align: center; font-size: 32px;">ABOUT ME</h2>
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px;">
-                I am a student at African Leadership University studying Software Engineering (Hons). I speak English, Kiswahili, French and Spanish. I am highly focused and have experience in both agriculture and cybernetics.
-            </p>
-            <p style="font-size: 18px; line-height: 1.6;">
-                My passion lies in combining technology with real-world solutions, particularly in agricultural innovation and cybersecurity applications.
-            </p>
-        </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div id="skills" class="section" style="padding: 50px 20px; background-color: white;">
-        <h2 style="color: #1e3c96; text-align: center; font-size: 32px; margin-bottom: 40px;">MY SKILLS</h2>
-        <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
-            <div class="skill-box" style="background-color: #f8f9ff; border: 3px solid #1e3c96; padding: 25px; width: 250px; text-align: center; border-radius: 8px;">
-                <h3 style="color: #1e3c96; margin-bottom: 15px;">General Skills</h3>
-                <p style="margin: 10px 0; font-size: 16px;">Consulting</p>
-                <p style="margin: 10px 0; font-size: 16px;">Farming</p>
-                <p style="margin: 10px 0; font-size: 16px;">Front End Development</p>
-                <p style="margin: 10px 0; font-size: 16px;">Problem Solving</p>
-            </div>
-            <div class="skill-box" style="background-color: #f8f9ff; border: 3px solid #1e3c96; padding: 25px; width: 250px; text-align: center; border-radius: 8px;">
-                <h3 style="color: #1e3c96; margin-bottom: 15px;">Programming Languages</h3>
-                <p style="margin: 10px 0; font-size: 16px;">JavaScript</p>
-                <p style="margin: 10px 0; font-size: 16px;">Python</p>
-                <p style="margin: 10px 0; font-size: 16px;">Ruby</p>
-                <p style="margin: 10px 0; font-size: 16px;">HTML/CSS</p>
-            </div>
-            <div class="skill-box" style="background-color: #f8f9ff; border: 3px solid #1e3c96; padding: 25px; width: 250px; text-align: center; border-radius: 8px;">
-                <h3 style="color: #1e3c96; margin-bottom: 15px;">Languages</h3>
-                <p style="margin: 10px 0; font-size: 16px;">English (Fluent)</p>
-                <p style="margin: 10px 0; font-size: 16px;">Kiswahili (Fluent)</p>
-                <p style="margin: 10px 0; font-size: 16px;">French (Conversational)</p>
-                <p style="margin: 10px 0; font-size: 16px;">Spanish (Conversational)</p>
+        <div class="section" id="about">
+            <h2>About</h2>
+            <div class="box">
+                <p>Software engineering student at African Leadership University. Fluent in English, Kiswahili, French, and Spanish. Passionate about tech, agriculture, and cybersecurity.</p>
             </div>
         </div>
-    </div>
 
-    <!-- Experience Section -->
-    <div id="experience" class="section blue-bg" style="background-color: #f8f9ff; padding: 50px 20px;">
-        <h2 style="color: #1e3c96; text-align: center; font-size: 32px; margin-bottom: 40px;">WORK EXPERIENCE</h2>
-        <div class="info-box" style="background-color: white; padding: 30px; margin: 20px auto; border-left: 5px solid #1e3c96; border-radius: 8px; max-width: 800px;">
-            <h3 style="color: #1e3c96; font-size: 22px; margin-bottom: 10px;">Software Development Intern</h3>
-            <h4 style="color: #2850d1; font-size: 18px; margin-bottom: 10px;">Enligne</h4>
-            <p style="font-style: italic; color: #666; margin-bottom: 15px;">2023 - Present</p>
-            <p style="font-size: 16px; line-height: 1.6;">
-                Working as a software development intern, focusing on front-end development and agricultural technology solutions. Collaborated with team members to develop web applications and contributed to various projects involving modern web technologies.
-            </p>
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="box">
+                <strong>Programming:</strong> Python, JavaScript, Ruby, HTML/CSS<br>
+                <strong>Other:</strong> Consulting, Farming, Frontend Dev, Problem Solving
+            </div>
         </div>
-        <div class="info-box" style="background-color: white; padding: 30px; margin: 20px auto; border-left: 5px solid #1e3c96; border-radius: 8px; max-width: 800px;">
-            <h3 style="color: #1e3c96; font-size: 22px; margin-bottom: 10px;">Agricultural Consultant</h3>
-            <h4 style="color: #2850d1; font-size: 18px; margin-bottom: 10px;">Freelance</h4>
-            <p style="font-style: italic; color: #666; margin-bottom: 15px;">2022 - 2023</p>
-            <p style="font-size: 16px; line-height: 1.6;">
-                Provided consulting services to local farmers on modern agricultural techniques and technology integration. Helped improve crop yields and implement sustainable farming practices.
-            </p>
-        </div>
-    </div>
 
-    <!-- Education Section -->
-    <div id="education" class="section" style="padding: 50px 20px; background-color: white;">
-        <h2 style="color: #1e3c96; text-align: center; font-size: 32px; margin-bottom: 40px;">EDUCATION</h2>
-        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-            <div class="info-box" style="background-color: #f8f9ff; padding: 30px; border-left: 5px solid #1e3c96; border-radius: 8px;">
-                <h3 style="color: #1e3c96; font-size: 24px; margin-bottom: 15px;">African Leadership University</h3>
-                <p style="font-size: 18px; color: #2850d1; margin-bottom: 10px;"><strong>Software Engineering (Hons)</strong></p>
-                <p style="font-size: 16px; color: #666; margin-bottom: 15px;">Current Student</p>
-                <p style="font-size: 16px;">Focusing on full-stack development, cybersecurity, and agricultural technology applications.</p>
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="box">
+                <strong>Software Intern - Enligne</strong><br>2023 - Present<br>Worked on frontend and agri-tech solutions.
+            </div>
+            <div class="box">
+                <strong>Agricultural Consultant - Freelance</strong><br>2022 - 2023<br>Helped local farmers adopt modern techniques.
+            </div>
+        </div>
+
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <div class="box">
+                African Leadership University - Software Engineering (Hons)
+            </div>
+        </div>
+
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="box">
+                <strong>Agricultural Management System:</strong> Web-based platform for farm tracking.
+            </div>
+            <div class="box">
+                <strong>Cybersecurity Awareness:</strong> Platform to teach small businesses about security.
+            </div>
+            <div class="box">
+                <strong>Language App:</strong> App to learn English, Kiswahili, French, and Spanish.
+            </div>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <div class="box">
+                Email: <a href="mailto:r.hongo@alustudent.com">r.hongo@alustudent.com</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/rowan-gumba-" target="_blank">Rowan</a><br>
+                GitHub: <a href="https://github.com/rowanhongo" target="_blank">rowanhongo</a>
             </div>
         </div>
     </div>
 
-    <!-- Projects Section -->
-    <div id="projects" class="section blue-bg" style="background-color: #f8f9ff; padding: 50px 20px;">
-        <h2 style="color: #1e3c96; text-align: center; font-size: 32px; margin-bottom: 40px;">MY PROJECTS</h2>
-        <div style="max-width: 700px; margin: 0 auto;">
-            <div class="project-slider" id="project-container" style="background-color: white; border: 3px solid #1e3c96; padding: 40px; text-align: center; border-radius: 10px;">
-                <div id="project1" class="project-slide">
-                    <h3 style="color: #1e3c96; font-size: 24px; margin-bottom: 20px;">Agricultural Management System</h3>
-                    <p style="font-size: 16px; line-height: 1.6; color: #555;">
-                        Developed a web-based system to help farmers track crop cycles, weather patterns, and yield predictions using JavaScript and Python. The system integrates real-time data to provide actionable insights for better farming decisions.
-                    </p>
-                </div>
-                <div id="project2" class="project-slide" style="display: none;">
-                    <h3 style="color: #1e3c96; font-size: 24px; margin-bottom: 20px;">Cybersecurity Awareness Platform</h3>
-                    <p style="font-size: 16px; line-height: 1.6; color: #555;">
-                        Created an educational platform using Ruby on Rails to teach cybersecurity best practices to small businesses. The platform includes interactive modules, quizzes, and real-world case studies.
-                    </p>
-                </div>
-                <div id="project3" class="project-slide" style="display: none;">
-                    <h3 style="color: #1e3c96; font-size: 24px; margin-bottom: 20px;">Multi-language Learning App</h3>
-                    <p style="font-size: 16px; line-height: 1.6; color: #555;">
-                        Built a language learning application that helps users practice English, Kiswahili, French, and Spanish. Features include vocabulary games, pronunciation guides, and progress tracking using modern web technologies.
-                    </p>
-                </div>
-                <div style="margin-top: 30px;">
-                    <button onclick="prevProject()" style="background-color: #1e3c96; color: white; border: none; padding: 12px 20px; margin: 0 10px; border-radius: 5px; cursor: pointer; font-size: 16px;">Previous</button>
-                    <button onclick="nextProject()" style="background-color: #1e3c96; color: white; border: none; padding: 12px 20px; margin: 0 10px; border-radius: 5px; cursor: pointer; font-size: 16px;">Next</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="section" style="padding: 50px 20px; background-color: white;">
-        <h2 style="color: #1e3c96; text-align: center; font-size: 32px; margin-bottom: 40px;">CONTACT INFO</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; max-width: 1000px; margin: 0 auto; justify-content: center;">
-            <!-- Contact Information -->
-            <div style="flex: 1; min-width: 300px;">
-                <div class="info-box" style="background-color: #f8f9ff; padding: 30px; border-left: 5px solid #1e3c96; border-radius: 8px;">
-                    <h3 style="color: #1e3c96; margin-bottom: 20px; font-size: 20px;">Get In Touch</h3>
-                    <p style="margin: 15px 0; font-size: 16px;">
-                        <strong>Email:</strong> <a href="mailto:r.hongo@alustudent.com" style="color: #2850d1; text-decoration: none;">r.hongo@alustudent.com</a>
-                    </p>
-                    <p style="margin: 15px 0; font-size: 16px;">
-                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rowan-gumba-" target="_blank" style="color: #2850d1; text-decoration: none;">Rowan LinkedIn</a>
-                    </p>
-                    <p style="margin: 15px 0; font-size: 16px;">
-                        <strong>Github:</strong> <a href="https://github.com/rowanhongo" target="_blank" style="color: #2850d1; text-decoration: none;">Rowan Github</a>
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Contact Form -->
-            <div style="flex: 1; min-width: 300px;">
-                <div class="contact-form" style="background-color: #f8f9ff; padding: 30px; border-radius: 8px; border: 2px solid #1e3c96;">
-                    <h3 style="color: #1e3c96; margin-bottom: 20px; font-size: 20px;">Send Me a Message</h3>
-                    <form id="contactForm">
-                        <label style="display: block; margin-bottom: 5px; color: #1e3c96; font-weight: bold;">Your Name:</label>
-                        <input type="text" id="userName" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 14px;">
-                        <span id="nameError" style="color: red; font-size: 12px; display: block; margin-bottom: 10px;"></span>
-                        
-                        <label style="display: block; margin-bottom: 5px; color: #1e3c96; font-weight: bold;">Your Email:</label>
-                        <input type="email" id="userEmail" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 14px;">
-                        <span id="emailError" style="color: red; font-size: 12px; display: block; margin-bottom: 10px;"></span>
-                        
-                        <label style="display: block; margin-bottom: 5px; color: #1e3c96; font-weight: bold;">Your Message:</label>
-                        <textarea id="userMessage" rows="5" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 14px; resize: vertical;"></textarea>
-                        <span id="messageError" style="color: red; font-size: 12px; display: block; margin-bottom: 15px;"></span>
-                        
-                        <button type="submit" style="background-color: #1e3c96; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 100%;">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Simple Modal -->
-    <div id="thankyouModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000;">
-        <div style="background-color: white; margin: 20% auto; padding: 30px; width: 80%; max-width: 400px; border-radius: 10px; text-align: center;">
-            <span onclick="closeModal()" style="float: right; font-size: 24px; cursor: pointer; color: #999;">&times;</span>
-            <h3 style="color: #1e3c96; margin-bottom: 15px;">Thank You!</h3>
-            <p>Your message has been received. I'll get back to you soon!</p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer style="background-color: #1e3c96; color: white; text-align: center; padding: 25px;">
-        <p>&copy; 2025 Rowan Hongo. All rights reserved.</p>
+    <footer>
+        <p>Do Hard Things</p>
+        <p>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </p>
     </footer>
 
-    <script>
-        // Simple mobile menu toggle
-        function toggleMenu() {
-            var navbar = document.getElementById('navbar');
-            if (navbar.style.height === '200px') {
-                navbar.style.height = '60px';
-            } else {
-                navbar.style.height = '200px';
-            }
-        }
-
-        // Project slider
-        var currentProject = 1;
-        
-        function showProject(num) {
-            document.getElementById('project1').style.display = 'none';
-            document.getElementById('project2').style.display = 'none';
-            document.getElementById('project3').style.display = 'none';
-            
-            document.getElementById('project' + num).style.display = 'block';
-        }
-        
-        function nextProject() {
-            currentProject++;
-            if (currentProject > 3) {
-                currentProject = 1;
-            }
-            showProject(currentProject);
-        }
-        
-        function prevProject() {
-            currentProject--;
-            if (currentProject < 1) {
-                currentProject = 3;
-            }
-            showProject(currentProject);
-        }
-
-        // Auto slide projects every 5 seconds
-        setInterval(function() {
-            nextProject();
-        }, 5000);
-
-        // Form validation
-        document.getElementById('contactForm').onsubmit = function(e) {
-            e.preventDefault();
-            
-            // Clear old errors
-            document.getElementById('nameError').innerHTML = '';
-            document.getElementById('emailError').innerHTML = '';
-            document.getElementById('messageError').innerHTML = '';
-            
-            var name = document.getElementById('userName').value;
-            var email = document.getElementById('userEmail').value;
-            var message = document.getElementById('userMessage').value;
-            var isValid = true;
-            
-            // Check name
-            if (name.length < 2) {
-                document.getElementById('nameError').innerHTML = 'Name must be at least 2 characters long';
-                isValid = false;
-            }
-            
-            // Check email
-            if (!email.includes('@') || !email.includes('.')) {
-                document.getElementById('emailError').innerHTML = 'Please enter a valid email address';
-                isValid = false;
-            }
-            
-            // Check message
-            if (message.length < 10) {
-                document.getElementById('messageError').innerHTML = 'Message must be at least 10 characters long';
-                isValid = false;
-            }
-            
-            if (isValid) {
-                // Show thank you modal
-                document.getElementById('thankyouModal').style.display = 'block';
-                
-                // Clear the form
-                document.getElementById('contactForm').reset();
-                
-                console.log('Form submitted:', {name: name, email: email, message: message});
-            }
-        }
-
-        // Close modal function
-        function closeModal() {
-            document.getElementById('thankyouModal').style.display = 'none';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            var modal = document.getElementById('thankyouModal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-
-        // Smooth scrolling for navigation links
-        var navLinks = document.querySelectorAll('#navbar a');
-        for (var i = 0; i < navLinks.length; i++) {
-            navLinks[i].onclick = function(e) {
-                e.preventDefault();
-                var targetId = this.getAttribute('href');
-                var targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({behavior: 'smooth'});
-                }
-            }
-        }
-    </script>
 </body>
 </html>
+
