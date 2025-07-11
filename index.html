@@ -1,40 +1,139 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Rowan Hongo Resume</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #fcf7f2;
-            color: #2e1a13;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rowan Hongo Resume</title>
 
-        /* might add more later */
+  <style>
+    /* ---------- base ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
 
-        /* Content area */
-        .main-content {
-            margin-left: 200px;
-            padding: 20px;
-        }
+    :root {
+      --purple: #5c2e7e;
+      --brown:  #7b3f00;
+      --bg:     #fcf7f2;
+      --text:   #2e1a13;
+    }
 
-        h1 {
-            color: #5c2e7e;
-        }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+      font-size: 16px;          /* keeps text reasonable on all devices */
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-        h2 {
-            color: #7b3f00; /* brown */
-            border-bottom: 1px solid #d4c2b8;
-            padding-bottom: 5px;
-        }
+    /* ---------- layout ---------- */
+    .main-content { padding: 20px; }
+    footer        { text-align: center; padding: 20px; background: var(--purple); color: #fff; }
 
-        .section {
-            margin-bottom: 30px;
-        }
+    /* add the 200 px gutter only on wider screens */
+    @media (min-width: 768px) {
+      .main-content, footer { margin-left: 200px; }
+    }
 
-        .box {
-            background-color: #f5edfc; /* soft purple tint */
-            border-left: 5px solid #7b3f00; /* brown accent */
-            padding: 15px;
-            margin: 15px 0;
+    /* ---------- typography ---------- */
+    h1 {
+      margin: 0 0 20px;
+      font-size: 2rem;           /* 32 px on default 16 px root */
+      color: var(--purple);
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;        /* 20 px */
+      color: var(--brown);
+      border-bottom: 1px solid #d4c2b8;
+      padding-bottom: 5px;
+    }
+
+    /* ---------- reusable blocks ---------- */
+    .section { margin-bottom: 30px; }
+
+    .box {
+      background: #f5edfc;
+      border-left: 5px solid var(--brown);
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    /* ---------- footer links ---------- */
+    footer a {
+      color: #f4dcb0;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="main-content">
+    <h1>Rowan Hongo</h1>
+
+    <div class="section" id="about">
+      <h2>About</h2>
+      <div class="box">
+        <p>Software engineering student at African Leadership University. Fluent in English, Kiswahili, French, and Spanish. Passionate about tech, agriculture, and cybersecurity.</p>
+      </div>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="box">
+        <strong>Programming:</strong> Python, JavaScript, Ruby, HTML/CSS<br>
+        <strong>Other:</strong> Consulting, Farming, Frontend Dev, Problem Solving
+      </div>
+    </div>
+
+    <div class="section" id="experience">
+      <h2>Experience</h2>
+      <div class="box">
+        <strong>Software Intern – Enligne</strong><br>2023 – Present<br>
+        Worked on frontend and agri‑tech solutions.
+      </div>
+      <div class="box">
+        <strong>Agricultural Consultant – Freelance</strong><br>2022 – 2023<br>
+        Helped local farmers adopt modern techniques.
+      </div>
+    </div>
+
+    <div class="section" id="education">
+      <h2>Education</h2>
+      <div class="box">African Leadership University – Software Engineering (Hons)</div>
+    </div>
+
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="box"><strong>Agricultural Management System:</strong> Web‑based platform for farm tracking.</div>
+      <div class="box"><strong>Cybersecurity Awareness:</strong> Platform to teach small businesses about security.</div>
+      <div class="box"><strong>Language App:</strong> App to learn English, Kiswahili, French, and Spanish.</div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="box">
+        Email: <a href="mailto:r.hongo@alustudent.com">r.hongo@alustudent.com</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/rowan-gumba-" target="_blank">Rowan</a><br>
+        GitHub: <a href="https://github.com/rowanhongo" target="_blank">rowanhongo</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Do Hard Things</p>
+    <p>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
